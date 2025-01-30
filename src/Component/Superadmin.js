@@ -4,6 +4,7 @@ import Login from "../Pages/Authentication/Login";
 import ProtectedRoute from "../Component/PRoute/ProtectedRoute";
 import LandingPage from "../Pages/Landingpage";
 import Dashboard from "../Pages/Dashboard";
+import Leftmenu from "../Leftmenu";
 
 function Superadmin() {
   return (
@@ -11,6 +12,7 @@ function Superadmin() {
       <Routes>
         {/* Public Routes */}
         <Route path="/" element={<Login />} />
+        <Route path="/left" element={<Leftmenu />} />
 
         {/* Protected Routes */}
         <Route >
